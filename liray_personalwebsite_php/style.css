@@ -1,0 +1,145 @@
+/* ===== 1. CORE STYLES & BACKGROUND ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('images/theme.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ===== 2. HEADER ===== */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/bannerdarkblue.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-family: 'Merriweather', serif;
+}
+
+header h1 {
+    font-size: 56px;
+    margin: 0;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+/* ===== 3. NAVIGATION ===== */
+nav {
+    background: rgba(46, 5, 160, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #4ecff0;
+}
+
+/* ===== 4. CONTENT LAYOUT ===== */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.9);
+    margin-bottom: 40px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-left: 8px solid #4a007a;
+}
+
+#contact {
+    background: rgba(233, 145, 189, 0.95);
+    border-left: 8px solid #e01078;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    color: #001c7a;
+    font-size: 32px;
+    margin-top: 0;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* ===== 5. LISTS & IMAGES ===== */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 15px;
+    padding-left: 35px;
+    position: relative;
+    font-size: 18px;
+}
+
+ul li::before {
+    content: '💠';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.contact-list li::before {
+    content: '📧';
+}
+
+.profile-img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== 6. FOOTER ===== */
+footer {
+    background: #2e05a0;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: auto;
+}
