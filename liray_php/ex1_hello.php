@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>Exercise 1</title>
+</head>
+<body>
+    <?php 
+    echo "Hello, PHP!";
+    ?>
+</body>
+</html>
+
+
