@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Activity 5 - Payments + Modal</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+  <div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h3 class="mb-0">Payments</h3>
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addPaymentModal">
+        Add Payment
+      </button>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover align-middle">
+        <thead class="table-dark">
+          <tr>
+            <th>OR No.</th>
+            <th>Student</th>
+            <th>Description</th>
+            <th class="text-end">Amount</th>
+            <th>Date</th>
+            <th style="width:180px;">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10021</td>
+            <td>Maria Santos</td>
+            <td>Enrollment Fee</td>
+            <td class="text-end">₱ 500.00</td>
+            <td>2026-02-05</td>
+            <td>
+              <button class="btn btn-warning btn-sm">Edit</button>
+              <button class="btn btn-danger btn-sm">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>10022</td>
+            <td>Juan Dela Cruz</td>
+            <td>Tuition Payment</td>
+            <td class="text-end">₱ 1,200.00</td>
+            <td>2026-02-05</td>
+            <td>
+              <button class="btn btn-warning btn-sm">Edit</button>
+              <button class="btn btn-danger btn-sm">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal fade" id="addPaymentModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Add Payment</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">OR No.</label>
+            <input type="text" class="form-control" placeholder="Enter OR number">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Student Name</label>
+            <input type="text" class="form-control" placeholder="Enter student name">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Description</label>
+            <input type="text" class="form-control" placeholder="e.g., Tuition Payment">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Amount</label>
+            <input type="number" class="form-control" placeholder="0.00">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Payment Type</label>
+            <select class="form-select">
+              <option selected>CASH</option>
+              <option>GCASH</option>
+              <option>BANK TRANSFER</option>
+              <option>CARD</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button class="btn btn-primary">Save</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Activity 4 - Registration Form</title>
+ <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+ <div class="container py-5">
+ <div class="row justify-content-center">
+ <div class="col-12 col-md-8 col-lg-6">
+ <div class="card shadow-sm">
+ <div class="card-body">
+ <h4 class="mb-3">Student Registration</h4>
+ <form>
+ <div class="mb-3">
+ <label class="form-label">Full Name</label>
+ <input type="text" class="form-control" placeholder="Enter full name">
+ </div>
+ <div class="mb-3">
+ <label class="form-label">Email</label>
+ <input type="email" class="form-control is-invalid" placeholder="Enter email">
+ <div class="invalid-feedback">Please enter a valid email.</div>
+ </div>
+ <div class="mb-3">
+ <label class="form-label">Course</label>
+ <select class="form-select">
+ <option selected disabled>Select course</option>
+ <option>BSIT</option>
+ <option>BSBA</option>
+ <option>Education</option>
+ </select>
+ </div>
+ <div class="mb-3">
+ <label class="form-label">Year Level</label>
+ <select class="form-select">
+ <option selected disabled>Select year level</option>
+ <option>1st Year</option>
+ <option>2nd Year</option>
+ <option>3rd Year</option>
+ <option>4th Year</option>
+ </select>
+ </div>
+ <div class="form-check mb-3">
+ <input class="form-check-input" type="checkbox" id="agree">
+ <label class="form-check-label" for="agree">I agree to the terms</label>
+ </div>
+ <div class="text-end">
+ <button type="reset" class="btn btn-outline-secondary">Reset</button>
+ <button type="submit" class="btn btn-primary">Submit</button>
+ </div>
+ </form>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

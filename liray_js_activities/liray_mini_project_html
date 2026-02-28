@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Mini Project</title>
+</head>
+<body>
+ <h1>Mini Project: Login Checker</h1>
+ <label>Username:</label>
+ <input type="text" id="user"><br><br>
+ <label>Password:</label>
+ <input type="password" id="pass"><br><br>
+ <button onclick="login()">Login</button>
+ <p id="result"></p>
+ <script>
+ function login() {
+ let username = document.getElementById("user").value;
+ let password = document.getElementById("pass").value;
+ if (username === "admin" && password === "1234") {
+ document.getElementById("result").textContent = "Login 
+Success!";
+ } else {
+ document.getElementById("result").textContent = "Login 
+Failed!";
+ }
+ }
+ </script>
+</body>
+</html>

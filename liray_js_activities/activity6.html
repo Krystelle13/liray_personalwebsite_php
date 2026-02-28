@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Activity 6</title>
+
+</head>
+<body>
+    <h1>Activity 6: Interaction</h1>
+<p id="message">This text will change. </p>
+
+<button onclick="welcomeMessage()">Welcome</button>
+
+<button onclick="goodbyeMessage()">Goodbye
+    
+</button>
+
+<script>
+     function welcomeMessage()
+    {
+        document.getElementById("message").textContent = "Welcome to DOIT College!";
+    }
+
+
+    function goodbyeMessage()
+    {
+        document.getElementById("message").textContent = "Goodbye!";
+    }
+
+</script>
+
+</body>
+</html>

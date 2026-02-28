@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Activity 8</title>
+    <style>
+        body{ font-family: Arial, sans-serif; padding: 20px;}
+        .box { max-width: 420px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;}
+        input{ width: 100%; padding: 10px;margin: 10px 0;font-size: 16px;}
+        button{ padding: 10px 14px; font-size: 16px; cursor: pointer;}
+        #result{ margin-top: 12px;font-weight: bold;}
+    </style>
+</head>
+<body>
+    <h1> Activity 8: Pass/Fail Checker (Input + Output) </h1>
+    <div class="box">
+        <label for="gradeInput">Enter your grade</label>
+        <input type="number" id="gradeInput" placeholder="e.g., 85" min="0" max="100"> 
+        <button onclick="checkGrade()">Check Result</button>
+<p id="result">Result: ____</p>
+    </div>
+    <script>
+        function checkGrade() {
+            const gradeValue = document.getElementById("gradeInput").value;
+            const resultEl = document.getElementById("result");
+            //If Empty
+            if (gradeValue === "") {
+                resultEl.textContent = "Result: Please enter a grade.";
+                return;
+            }
+            const grade = Number(gradeValue);
+            //if invalid
+            if (isNaN(grade)|| grade < 0 || grade > 100) {
+                resultEl.textContent = "Result: Please enter a valid grade (0 to 100).";
+                return;
+            }
+            // Pass/Fail Condition
+            if (grade >= 75) {
+
+                resultEl.textContent = "Result: Passed=";
+            } else 
+            {
+                
+                resultEl.textContent = "Result: Failed";
+            }
+        }
+    </script>
+</body>
+</html>
